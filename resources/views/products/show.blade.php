@@ -7,7 +7,7 @@
         <h2 class="text-xl font-semibold">{{ $product->name }}</h2>
         <p><strong>Slug:</strong> {{ $product->slug }}</p>
         <p><strong>Price:</strong> ${{ number_format($product->price, 2) }}</p>
-        <p><strong>SKU:</strong> {{ $product->sku }}</p>
+        <p><strong>Stock Keeping Unit:</strong> {{ $product->sku }}</p>
         <p><strong>Brand:</strong> {{ $product->brand->name }}</p>
         <p><strong>Description:</strong> {{ $product->description ?? 'No description' }}</p>
         <p><strong>Categories:</strong> {{ $product->categories->pluck('name')->implode(', ') }}</p>
